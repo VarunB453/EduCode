@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 226 100% 67%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 226 100% 59%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 226 100% 82%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 226 100% 67%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+  
+  .nav-link {
+    @apply relative px-4 py-2 text-educode-light hover:text-educode-accent transition-colors duration-200 ease-in-out;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute left-0 bottom-0 w-full h-0.5 bg-educode-accent scale-x-0 transition-transform duration-200 ease-in-out origin-right;
+  }
+  
+  .nav-link:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-educode-primary text-white rounded-lg hover:bg-educode-secondary transition-all duration-200 ease-in-out transform hover:-translate-y-0.5 flex items-center justify-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 border border-educode-primary text-educode-primary rounded-lg hover:bg-educode-primary hover:text-white transition-all duration-200 ease-in-out flex items-center justify-center gap-2;
+  }
+  
+  .feature-card {
+    @apply glass p-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .pricing-card {
+    @apply glass p-8 rounded-xl transition-all duration-300 hover:-translate-y-2;
+  }
+  
+  .testimonial-card {
+    @apply glass p-6 rounded-xl;
+  }
+  
+  .code-block {
+    @apply bg-black/30 p-4 rounded-lg font-mono text-sm overflow-x-auto my-4;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-6 text-educode-light;
+  }
+  
+  .subsection-heading {
+    @apply text-xl md:text-2xl font-semibold mb-4 text-educode-accent;
+  }
+  
+  .content-container {
+    @apply container mx-auto px-4 py-16;
+  }
+}
