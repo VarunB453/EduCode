@@ -1,5 +1,4 @@
-
-# 🚀 EduCode - Code. Learn. Conquer.  
+# 🚀 EduCode
 
 Welcome to **EduCode**, the ultimate coding dojo 🥋 where you don't just *learn* programming — you **live** it.  
 Get your hands dirty with interactive editors, build real-world projects, and become a code wizard 🧙‍♂️ — all from the comfort of your browser!
@@ -23,6 +22,16 @@ Get your hands dirty with interactive editors, build real-world projects, and be
 - 🎨 Tailwind CSS  
 - 🧩 shadcn/ui  
 - 🎞️ Framer Motion  
+
+---
+
+## 🌐 Live
+
+| 🔥 **Live Preview** 🔥 |
+|:---------------------:|
+|![Live-Page](https://github.com/user-attachments/assets/f8845231-e30e-40dd-918c-bc987bf96c6c)|
+| [🚀 Visit EduCode Live!](https://educodee.netlify.app/) |
+
 
 ---
 
@@ -53,7 +62,6 @@ npm run dev
 ---
 
 ## 📁 Project Layout Like a Boss
-
 
 ```
 EduCode/
@@ -143,6 +151,3 @@ Check out the project repo here: [EduCode Repo](https://github.com/VarunB453/Edu
 > "Talk is cheap. Show me the code." — Linus Torvalds
 
 ---
-
-Would you also want a version that's even more chaotic (like, *meme-style crazy*)? 🎉😎  
-Would be fun! 🚀
